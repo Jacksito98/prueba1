@@ -107,9 +107,9 @@ const { wait, simih, getBuffer, h2k, banner, generateMessageID, getGroupAdmins, 
 
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
-            + 'FN:Farhan\n'
+            + 'FN:Jack\n'
             + 'ORG:Owner FXC7;\n'
-            + 'TEL;type=CELL;type=VOICE;waid=628311800241:+62 831-1800-241\n'
+            + 'TEL;type=CELL;type=VOICE;waid=8295176783:+1 829-517-6783\n'
             + 'END:VCARD'
 
 function kyun(seconds){
@@ -266,7 +266,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i.ibb.co/Gp4H47k/7dba54f7e250.jpg'
 				}
-				teks = `@${num.split('@')[0]} \nWelcome Di Group *${mdata.subject}*\nJangan Lupa Intro!!`
+				teks = `@${num.split('@')[0]} \nBienvenido al cielo uwu *${mdata.subject}*\nHijo de pvta :D!!`
 				let buff = await getBuffer(ppimg)
 				frhan.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -276,7 +276,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i.ibb.co/Gp4H47k/7dba54f7e250.jpg'
 				}
-				teks = `Sayonara @${num.split('@')[0]} IRENE MISS YOU:D`
+				teks = `Hablamo nunca @${num.split('@')[0]} Tampoco era que te queriamos aqui bajo a mi3rda`
 				let buff = await getBuffer(ppimg)
 				frhan.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
@@ -686,7 +686,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 		case 'daftar':
 		case 'verify':
 					frhan.updatePresence(from, Presence.composing)
-					if (isUser) return reply('kamu sudah Menjadi Temen IRIENEBOT:D')
+					if (isUser) return reply('Ya heres amigo de JACKSITO-BOT :D')
 					if (isBanned) return reply(mess.only.benned)
 					user.push(sender)
 					fs.writeFileSync('./database/json/user.json', JSON.stringify(user))
@@ -696,7 +696,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					ppimg = 'https://i.ibb.co/Gp4H47k/7dba54f7e250.jpg'
 					}
 					const noSeri = createSerial(15)
-					captionnya = `╭─「 *PENDAFTARAN USER* 」\n│ \`\`\`Pendaftaran berhasil dengan\`\`\` \n│ \`\`\`SN: ${noSeri}\`\`\`\n│\n│\`\`\`Pada ${date} ${time}\`\`\`\n│\`\`\`[Nama]: ${pushname2}\`\`\`\n│\`\`\`[Nomor]: wa.me/${sender.split("@")[0]}\`\`\`\n│\`\`\`Untuk menggunakan bot\`\`\`\n│\`\`\`silahkan\`\`\`\n│\`\`\`kirim ${prefix}help/menu\`\`\`\n│\`\`\`\n│Total Pengguna: ${user.length} Orang\`\`\`\n╰─────────────────────────`
+					captionnya = `╭─「 *REGISTRO DE USUARIO* 」\n│ \`\`\`El registro es exitoso con\`\`\` \n│ \`\`\`SN: ${noSeri}\`\`\`\n│\n│\`\`\`Pada ${date} ${time}\`\`\`\n│\`\`\`[Nombre]: ${pushname2}\`\`\`\n│\`\`\`[Numero]: wa.me/${sender.split("@")[0]}\`\`\`\n│\`\`\`Para usar el bot\`\`\`\n│\`\`\`por favor\`\`\`\n│\`\`\`kirim ${prefix}help/menu\`\`\`\n│\`\`\`\n│Usuarios Totales: ${user.length} personas\`\`\`\n╰─────────────────────────`
 					daftarimg = await getBuffer(ppimg)
 					frhan.sendMessage(from, daftarimg, image, {quoted: mek, caption: captionnya})
 					break
@@ -902,9 +902,9 @@ return new Promise(resolve => setTimeout(resolve, ms));
 							})
 							.on('end', function () {
 								console.log('Finish')
-								exec(`webpmux -set exif ${addMetadata('FarhanXCode7', 'Jangan Lupa Donasi')} ${ran} -o ${ran}`, async (error) => {
+								exec(`webpmux -set exif ${addMetadata('JACK-BOT', '@Jack_paymon')} ${ran} -o ${ran}`, async (error) => {
 									if (error) return reply(mess.error.stick)
-									await costum(fs.readFileSync(ran), sticker, FarhanGans, ` ~ Nihh Udah Jadi Stikernya`)
+									await costum(fs.readFileSync(ran), sticker, FarhanGans, ` ~ Este es el stiker listo :D`)
 									fs.unlinkSync(media)	
 									fs.unlinkSync(ran)	
 								})
@@ -926,13 +926,13 @@ return new Promise(resolve => setTimeout(resolve, ms));
 								console.log(`Error : ${err}`)
 								fs.unlinkSync(media)
 								tipe = media.endsWith('.mp4') ? 'video' : 'gif'
-								reply(`❌ Gagal, pada saat mengkonversi ${tipe} ke stiker`)
+								reply(`❌fallo al convertir ${tipe} en stiker`)
 							})
 							.on('end', function () {
 								console.log('Finish')
-								exec(`webpmux -set exif ${addMetadata('FarhanXCode7', 'Jangan Lupa Donasi')} ${ran} -o ${ran}`, async (error) => {
+								exec(`webpmux -set exif ${addMetadata('JACK-BOT', '@Jack_paymon')} ${ran} -o ${ran}`, async (error) => {
 									if (error) return reply(mess.error.stick)
-									await costum(fs.readFileSync(ran), sticker, FarhanGans, `~ Nih Dah Jadi Gif Stikernya`)
+									await costum(fs.readFileSync(ran), sticker, FarhanGans, `~ Este es el stiker listo :D`)
 									fs.unlinkSync(media)
 									fs.unlinkSync(ran)
 								})
@@ -964,7 +964,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 							})
 						})
 					} else {
-						reply(`Kirim gambar dengan caption ${prefix}sticker atau tag gambar yang sudah dikirim`)
+						reply(`Compay :) Envia una imagen con un ${prefix}sticker o una etiqueta de imagen que se haya enviado deja de ser tan burro  ;-;`)
 					}
 					break 
 					case 'trigger':
@@ -992,7 +992,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					})
 					})
 					} else {
-					reply('Gunakan foto!')
+					reply('usa una foto!')
 					}
 					await limitAdd(sender) 
 					break 
@@ -1021,7 +1021,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					})
 					})
 					} else {
-					reply('Gunakan foto!')
+					reply('usa una foto!')
 					}
 					await limitAdd(sender) 
 				break 
@@ -1051,7 +1051,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					})
 					})
 					} else {
-					reply('Gunakan foto!')
+					reply('usa una foto!')
 					}
 					await limitAdd(sender) 
 				break 
@@ -1080,7 +1080,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					})
 					})
 					} else {
-					reply('Gunakan foto!')
+					reply('usa una foto!')
 					}
 					await limitAdd(sender) 
 				break 
@@ -1109,7 +1109,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					})
 					})
 					} else {
-					reply('Gunakan foto!')
+					reply('usa una foto!')
 					}
 					await limitAdd(sender) 
 				break 
@@ -1138,7 +1138,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					})
 					})
 					} else {
-					reply('Gunakan foto!')
+					reply('usa una foto!')
 					}
 					await limitAdd(sender) 
 				break 
@@ -1167,7 +1167,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					})
 					})
 					} else {
-					reply('Gunakan foto!')
+					reply('usa una foto!')
 					}
 					await limitAdd(sender) 
 				break 
@@ -1196,7 +1196,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					})
 					})
 					} else {
-					reply('Gunakan foto!')
+					reply('usa una foto!')
 					}
 					await limitAdd(sender) 
 				break 
@@ -1468,7 +1468,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 				media = await frhan.downloadAndSaveMediaMessage(mek)
 				await frhan.updateProfilePicture (from, media)
 				reply(mess.wait)
-				reply(`\`\`\`✓Sukses Mengganti Profil Group\`\`\` *${groupMetadata.subject}*`)
+				reply(`\`\`\`✓Cambio exitoso de perfil de grupo\`\`\` *${groupMetadata.subject}*`)
 			break
 			case 'apakah':
 				if (isBanned) return reply(mess.only.benned)    
@@ -3209,7 +3209,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					for (let _ of anu) {
 						frhan.deleteChat(_.jid)
 					}
-					reply(`\`\`\`Sukses delete all chat IRIENEBOT\`\`\``)
+					reply(`\`\`\`Eliminar con éxito todos los chats de JacksitoBOT\`\`\``)
 					break
                                 case 'bcgc':
 					frhan.updatePresence(from, Presence.composing) 
@@ -3243,7 +3243,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 						reply('Suksess broadcast')
 					} else {
 						for (let _ of anu) {
-							sendMess(_.jid, `[ *IRIENEBOT BROADCAST* ]\n\n${body.slice(4)}`)
+							sendMess(_.jid, `[ *JACKSITOBOT BROADCAST* ]\n\n${body.slice(4)}`)
 						}
 						reply('Suksess broadcast')
 					}
@@ -3402,12 +3402,12 @@ return new Promise(resolve => setTimeout(resolve, ms));
 						if (isAntiVirtex) return reply('anti virtex group sudah aktif')
 						_antivirtex.push(from)
 						fs.writeFileSync('./database/json/antivirtex.json', JSON.stringify(_antivirtex))
-						reply(`\`\`\`Sukses mengaktifkan mode anti virtex di group\`\`\` *${groupMetadata.subject}*`)
+						reply(`\`\`\`Activar con exito el modo anti virtex en grupo\`\`\` *${groupMetadata.subject}*`)
 					} else if ((args[0]) === 'off') {
 						if (!isAntiVirtex) return reply('Mode anti virtex sudah nonaktif')
 						_antivirtex.splice(from, 1)
 						fs.writeFileSync('./database/json/antivirtex.json', JSON.stringify(_antivirtex))
-						reply(`\`\`\`✓Sukes menonaktifkan mode anti virtex di group\`\`\` *${groupMetadata.subject}*`)
+						reply(`\`\`\`✓Modo anti virtex desactivado con exito en el grupo\`\`\` *${groupMetadata.subject}*`)
 					} else {
 						reply('on untuk mengaktifkan, off untuk menonaktifkan')
 					}
@@ -3423,12 +3423,12 @@ return new Promise(resolve => setTimeout(resolve, ms));
 						if (isSimi) return reply('Mode simi sudah aktif')
 						_samih.push(from)
 						fs.writeFileSync('./database/json/simi.json', JSON.stringify(_samih))
-						reply(`\`\`\`✓Sukses mengaktifkan mode simi di group\`\`\` *${groupMetadata.subject}*`)
+						reply(`\`\`\`✓Activar con exito el modo simi en el grupo\`\`\` *${groupMetadata.subject}*`)
 					} else if ((args[0]) === 'off') {
 						if (!isSimi) return reply('Mode simi Sudah Off sebelumnya')
 						_samih.splice(from, 1)
 						fs.writeFileSync('./database/json/simi.json', JSON.stringify(_samih))
-						reply(`\`\`\`✓Sukes menonaktifkan mode simi di group\`\`\` *${groupMetadata.subject}*`)
+						reply(`\`\`\`✓Desactivacion exitosa del modo simi en el grupo\`\`\` *${groupMetadata.subject}*`)
 					} else {
 						reply('On untuk mengaktifkan, Off untuk menonaktifkan')
 					}
@@ -3444,12 +3444,12 @@ return new Promise(resolve => setTimeout(resolve, ms));
 						if (isNsfw) return reply('Mode nsfw sudah aktif')
 						_nsfw.push(from)
 						fs.writeFileSync('./database/json/nsfw.json', JSON.stringify(_nsfw))
-						reply(`\`\`\`✓Sukses mengaktifkan mode nsfw di group\`\`\` *${groupMetadata.subject}*`)
+						reply(`\`\`\`✓Activar con exito el modo nsfw en grupo\`\`\` *${groupMetadata.subject}*`)
 					} else if ((args[0]) === 'off') {
 						if (!isNsfw) return reply('Mode Nsfw sudah Off Sebelumnya')
 						_nsfw.splice(from, 1)
 						fs.writeFileSync('./database/json/nsfw.json', JSON.stringify(_nsfw))
-						reply(`\`\`\`✓Sukes menonaktifkan mode nsfw di group\`\`\` *${groupMetadata.subject}*`)
+						reply(`\`\`\`✓Desactivacion exitosa del modo nsfw en el grupo\`\`\` *${groupMetadata.subject}*`)
 					} else {
 						reply('On untuk mengaktifkan, Off untuk menonaktifkan')
 					}
@@ -3465,12 +3465,12 @@ return new Promise(resolve => setTimeout(resolve, ms));
 						if (isAnime) return reply('Mode anime sudah aktif')
 						_anime.push(from)
 						fs.writeFileSync('./database/json/anime.json', JSON.stringify(_anime))
-						reply(`\`\`\`✓Sukses mengaktifkan mode anime di group\`\`\` *${groupMetadata.subject}*`)
+						reply(`\`\`\`✓Activar con exito el modo anime en el grupo\`\`\` *${groupMetadata.subject}*`)
 					} else if ((args[0]) === 'off') {
 						if (!isAnime) return reply('Mode Anime Sudah Off Sebelumnya')
 						_anime.splice(from, 1)
 						fs.writeFileSync('./database/json/anime.json', JSON.stringify(_anime))
-						reply(`\`\`\`✓Sukes menonaktifkan mode anime di group\`\`\` *${groupMetadata.subject}*`)
+						reply(`\`\`\`✓Modo anime desactivado con exito en el grupo\`\`\` *${groupMetadata.subject}*`)
 					} else {
 						reply('On untuk mengaktifkan, Off untuk menonaktifkan')
 					}
@@ -3486,12 +3486,12 @@ return new Promise(resolve => setTimeout(resolve, ms));
 						if (isWelkom) return reply('Udah aktif gan')
 						_welkom.push(from)
 						fs.writeFileSync('./database/json/welkom.json', JSON.stringify(_welkom))
-						reply(`\`\`\`✓Sukses mengaktifkan fitur welcome di group\`\`\` *${groupMetadata.subject}*`)
+						reply(`\`\`\`✓Activo con exito la funcion de bienvenida en el grupo\`\`\` *${groupMetadata.subject}*`)
 					} else if ((args[0]) === 'off') {
 						if (!isWelkom) return reply('Mode Welcome Sudah Off Sebelumnya')
 						_welkom.splice(from, 1)
 						fs.writeFileSync('./database/json/welkom.json', JSON.stringify(_welkom))
-						reply(`\`\`\`✓Sukses menonaktifkan fitur welcome di group\`\`\` *${groupMetadata.subject}*`)
+						reply(`\`\`\`✓Desactivar con exito la funcion de bienvenida en el grupo\`\`\` *${groupMetadata.subject}*`)
 					} else {
 						reply('On untuk mengaktifkan, Off untuk menonaktifkan')
 					}
@@ -3505,12 +3505,12 @@ return new Promise(resolve => setTimeout(resolve, ms));
 						if (isAntiLink) return reply('anti link sudah on')
 						_antilink.push(from)
 						fs.writeFileSync('./database/json/antilink.json', JSON.stringify(_antilink))
-						reply(`\`\`\`✓Sukses mengaktifkan fitur anti link di group\`\`\` *${groupMetadata.subject}*`)
+						reply(`\`\`\`✓Activado con exito la funcion anti-enlace en el grupo\`\`\` *${groupMetadata.subject}*`)
 					} else if ((args[0]) === 'off') {
 						if (!isAntiLink) return reply('anti link sudah off sebelumnya')
 						_antilink.splice(from, 1)
 						fs.writeFileSync('./database/json/antilink.json', JSON.stringify(_antilink))
-						reply(`\`\`\`✓Sukses menonaktifkan fitur anti link di group\`\`\` *${groupMetadata.subject}*`)
+						reply(`\`\`\`✓Desactivacion exitosa de la funcion anti-enlace en el grupo\`\`\` *${groupMetadata.subject}*`)
 					} else {
 						reply('on untuk mengaktifkan, off untuk menonaktifkan')
 					}
@@ -3524,12 +3524,12 @@ return new Promise(resolve => setTimeout(resolve, ms));
 						if (isBadWord) return reply('anti badword sudah aktif')
 						_badword.push(from)
 						fs.writeFileSync('./database/json/badword.json', JSON.stringify(_badword))
-						reply(`\`\`\`✓Sukses mengaktifkan fitur anti badword di group\`\`\` *${groupMetadata.subject}*`)
+						reply(`\`\`\`✓Activar con exito la función anti badword en el grupo\`\`\` *${groupMetadata.subject}*`)
 					} else if ((args[0]) === 'off') {
 						if (!isBadWord) return reply('anti badword sudah off sebelumnya')
 						_badword.splice(from, 1)
 						fs.writeFileSync('./database/json/badword.json', JSON.stringify(_badword))
-						reply(`\`\`\`✓Sukses menonaktifkan fitur anti badword di group\`\`\` *${groupMetadata.subject}*`)
+						reply(`\`\`\`✓Desactivar con exito la funcion anti badword en el grupo\`\`\` *${groupMetadata.subject}*`)
 					} else {
 						reply('on untuk mengaktifkan, off untuk menonaktifkan')
 					}
