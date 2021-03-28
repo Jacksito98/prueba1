@@ -327,22 +327,22 @@ async function starts() {
 			frhan.chatRead(from)
 
 			mess = {
-				wait: '*⏳ ᴡᴀɪᴛ ꜱᴇᴅᴀɴɢ ᴅɪ ᴩʀᴏꜱᴇꜱ...*',
-				success: '*ꜱᴜᴋꜱᴇꜱ...*',
+				wait: '*⏳𝐞𝐬𝐩𝐞𝐫𝐚 𝐪𝐮𝐞 𝐲𝐨 𝐧𝐨 𝐬𝐨𝐲 𝐟𝐥𝐚𝐬𝐡 𝐌𝐦𝐯𝐫𝐠𝐚😾...*',
+				success: '*𝐄𝐱𝐢𝐭𝐨...*',
 				error: {
-				 bug: '*Terjadi Kesalahan Coba Hubungi Owner Untuk Melaporkan Kesalahan*',
-				stick: ' *ɢᴀɢᴀʟ, ᴛᴇʀᴊᴀᴅɪ ᴋᴇꜱᴀʟᴀʜᴀɴ ꜱᴀᴀᴛ ᴍᴇɴɢᴋᴏɴᴠᴇʀꜱɪ ɢᴀᴍʙᴀʀ ᴋᴇ ꜱᴛɪᴄᴋᴇʀ*\n*ᴄᴏʙᴀ ᴜʟᴀɴɢɪ ᴅᴇɴɢᴀɴ ʀᴇᴩʟy ꜰᴏᴛᴏ yɢ ꜱᴜᴅᴀʜ ᴛᴇʀᴋɪʀɪᴍ*',
-				Iv: '*ᴍᴀᴀꜰ ʟɪɴᴋ ᴛɪᴅᴀᴋ ᴠᴀʟɪᴅ!!*'
+				 bug: '*𝐒𝐞 𝐩𝐫𝐨𝐝𝐮𝐣𝐨 𝐮𝐧 𝐞𝐫𝐫𝐨𝐫 𝐢𝐧𝐭𝐞𝐧𝐭𝐞 𝐜𝐨𝐦𝐮𝐧𝐢𝐜𝐚𝐫𝐬𝐞 𝐜𝐨𝐧 𝐞𝐥 𝐩𝐫𝐨𝐩𝐢𝐞𝐭𝐚𝐫𝐢𝐨 𝐩𝐚𝐫𝐚 𝐢𝐧𝐟𝐨𝐫𝐦𝐚𝐫 𝐮𝐧 𝐞𝐫𝐫𝐨𝐫 :)*',
+				stick: ' *𝐅𝐚𝐥𝐥𝐨 𝐨𝐜𝐮𝐫𝐫𝐢𝐨 𝐮𝐧 𝐞𝐫𝐫𝐨𝐫 𝐚𝐥 𝐚 𝐜𝐨𝐧𝐯𝐞𝐫𝐭𝐢𝐫 𝐢𝐦𝐚𝐠𝐞𝐧 𝐚 𝐬𝐭𝐢𝐤𝐞𝐫*\n*𝐫𝐞𝐩𝐞𝐭𝐢𝐫 𝐜𝐨𝐧 𝐥𝐚 𝐢𝐦𝐚𝐠𝐞𝐧 𝐨 𝐞𝐬𝐩𝐞𝐫𝐚 𝐮𝐧 𝐫𝐚𝐭𝐨 :DD*',
+				Iv: '*𝐋𝐨𝐬𝐢𝐞𝐧𝐭𝐨 𝐧𝐨 𝐞𝐬 𝐮𝐧 𝐞𝐧𝐥𝐚𝐜𝐞 𝐯𝐚𝐥𝐢𝐝𝐨!!*'
 				},
 			only: {
-				group: '*ᴍᴀᴀꜰ ᴩᴇʀɪɴᴛᴀʜ ɪɴɪ ʜᴀɴyᴀ ʙɪꜱᴀ ᴅɪ ɢᴜɴᴀᴋᴀɴ ᴅᴀʟᴀᴍ ɢʀᴏᴜᴩ!*',
-				benned: '*ᴍᴀᴀꜰ ɴᴏᴍᴇʀ ᴋᴀᴍᴜ ᴋᴇ ʙᴀɴɴᴇᴅ ꜱɪʟᴀʜᴋᴀɴ ʜᴜʙᴜɴɢɪ ᴏᴡɴᴇʀ ᴀɢᴀʀ ᴍᴇᴍʙᴜᴋᴀ ʙᴀɴɴᴇᴅ ᴀɴᴅᴀ*',
-				ownerG: '*ᴍᴀᴀꜰ ᴩᴇʀɪɴᴛᴀʜ ɪɴɪ ʜᴀɴyᴀ ʙɪꜱᴀ ᴅɪ ɢᴜɴᴀᴋᴀɴ ᴏʟᴇʜ ᴏᴡɴᴇʀ ɢʀᴏᴜᴩ!*',
-				ownerB: '*ᴍᴀᴀꜰ ᴩᴇʀɪɴᴛᴀʜ ɪɴɪ ʜᴀɴyᴀ ʙɪꜱᴀ ᴅɪ ɢᴜɴᴀᴋᴀɴ ᴏʟᴇʜ ᴏᴡɴᴇʀ ʙᴏᴛ!* ',
-				premium: '*ᴍᴀᴀꜰ ꜰɪᴛᴜʀ ɪɴɪ ᴋʜᴜꜱᴜꜱ ᴜꜱᴇʀ ᴩʀᴇᴍɪᴜᴍ!!*',
-				userB: `Hai Kak ${pushname2} Kamu Belom Terdaftar Didatabase Silahkan Ketik \n${prefix}daftar`,
-				admin: '*ᴍᴀᴀꜰ ᴩᴇʀɪɴᴛᴀʜ ɪɴɪ ʜᴀɴyᴀ ʙɪꜱᴀ ᴅɪ ɢᴜɴᴀᴋᴀɴ ᴏʟᴇʜ ᴀᴅᴍɪɴ ɢʀᴏᴜᴩ!*',
-				Badmin: '*ᴍᴀᴀꜰ ᴩᴇʀɪɴᴛᴀʜ ɪɴɪ ʜᴀɴyᴀ ʙɪꜱᴀ ᴅɪ ɢᴜɴᴀᴋᴀɴ ᴋᴇᴛɪᴋᴀ ʙᴏᴛ ᴍᴇɴᴊᴀᴅɪ ᴀᴅᴍɪɴ!*',
+				group: '*𝐥𝐨𝐬𝐞𝐧𝐭𝐢𝐦𝐨𝐬 𝐞𝐬𝐭𝐞 𝐜𝐨𝐦𝐚𝐧𝐝𝐨 𝐬𝐨𝐥𝐨 𝐬𝐞 𝐩𝐮𝐞𝐝𝐞 𝐮𝐭𝐢𝐥𝐢𝐳𝐚𝐫 𝐞𝐧 𝐠𝐫𝐮𝐩𝐨!*',
+				benned: '*𝐥𝐨𝐬𝐢𝐞𝐧𝐭𝐨 𝐬𝐮 𝐧𝐮𝐦𝐞𝐫𝐨 𝐬𝐞 𝐡𝐚 𝐩𝐫𝐨𝐡𝐢𝐛𝐢𝐝𝐨 𝐩𝐨𝐫 𝐟𝐚𝐯𝐨𝐫 𝐜𝐨𝐧𝐭𝐚𝐜𝐭𝐞 𝐚𝐥 𝐩𝐫𝐨𝐩𝐢𝐞𝐭𝐚𝐫𝐢𝐨 𝐩𝐚𝐫𝐚 𝐚𝐛𝐫𝐢𝐫 𝐬𝐮 𝐩𝐫𝐨𝐡𝐢𝐛𝐢𝐝𝐨*',
+				ownerG: '*𝐋𝐨 𝐬𝐞𝐧𝐭𝐢𝐦𝐨𝐬 𝐞𝐬𝐭𝐞 𝐜𝐨𝐦𝐚𝐧𝐝𝐨 𝐬𝐨𝐥𝐨 𝐩𝐮𝐞𝐝𝐞 𝐬𝐞 𝐮𝐭𝐢𝐥𝐢𝐳𝐚𝐝𝐨 𝐩𝐨𝐫 𝐞𝐥 𝐩𝐫𝐨𝐩𝐢𝐞𝐭𝐚𝐫𝐢𝐨 𝐝𝐞𝐥 𝐠𝐫𝐮𝐩𝐨*',
+				ownerB: '*𝐋𝐨 𝐬𝐞𝐧𝐭𝐢𝐦𝐨𝐬 𝐞𝐬𝐭𝐞 𝐜𝐨𝐦𝐚𝐧𝐝𝐨 𝐬𝐨𝐥𝐨 𝐩𝐮𝐞𝐝𝐞 𝐬𝐞 𝐮𝐭𝐢𝐥𝐢𝐳𝐚𝐝𝐨 𝐩𝐨𝐫 𝐞𝐥 𝐩𝐫𝐨𝐩𝐢𝐞𝐭𝐚𝐫𝐢𝐨 𝐝𝐞𝐥 𝐛𝐨𝐭 !* ',
+				premium: '*𝐋𝐨 𝐬𝐞𝐧𝐭𝐢𝐦𝐨𝐬 𝐞𝐬𝐭𝐚 𝐟𝐮𝐧𝐜𝐢𝐨𝐧 𝐞𝐬 𝐞𝐬𝐩𝐞𝐜𝐢𝐚𝐥 𝐩𝐚𝐫𝐚 𝐮𝐬𝐮𝐚𝐫𝐢𝐨 𝐩𝐫𝐞𝐦𝐢𝐮𝐦 !!*',
+				userB: `𝐐𝐥𝐨𝐪 𝐛𝐫𝐨 ${pushname2}  𝐧𝐨 𝐞𝐬𝐭𝐚𝐬 𝐫𝐞𝐠𝐢𝐬𝐭𝐫𝐚𝐝𝐨 𝐞𝐧 𝐥𝐚 𝐛𝐚𝐬𝐞 𝐝𝐞 𝐝𝐚𝐭𝐨𝐬 𝐩𝐨𝐫 𝐟𝐚𝐯𝐨𝐫 𝐢𝐧𝐠𝐫𝐞𝐬𝐚 \n${prefix}daftar`,
+				admin: '*𝐋𝐨 𝐬𝐞𝐧𝐭𝐢𝐦𝐨𝐬 𝐞𝐬𝐭𝐞 𝐜𝐨𝐦𝐚𝐧𝐝𝐨 𝐬𝐨𝐥𝐨 𝐩𝐮𝐞𝐝𝐞 𝐬𝐞 𝐮𝐭𝐢𝐥𝐢𝐳𝐚𝐝𝐨 𝐩𝐨𝐫 𝐞𝐥 𝐚𝐝𝐦𝐢𝐧𝐢𝐬𝐭𝐫𝐚𝐝𝐨𝐫 𝐝𝐞𝐥 𝐠𝐫𝐮𝐩𝐨!*',
+				Badmin: '*𝐋𝐨 𝐬𝐞𝐧𝐭𝐢𝐦𝐨𝐬 𝐞𝐬𝐭𝐞 𝐜𝐨𝐦𝐚𝐧𝐝𝐨 𝐬𝐨𝐥𝐨 𝐒𝐞 𝐩𝐮𝐞𝐝𝐞 𝐬𝐞 𝐮𝐭𝐢𝐥𝐢𝐳𝐚𝐫  𝐜𝐮𝐚𝐧𝐝𝐨 𝐞𝐥 𝐛𝐨𝐭 𝐬𝐞 𝐜𝐨𝐧𝐯𝐢𝐞𝐫𝐭𝐞 𝐞𝐧 𝐚𝐝𝐦𝐢𝐧𝐢𝐬𝐭𝐫𝐚𝐝𝐨𝐫!*',
 				}
 			}
 
@@ -371,7 +371,7 @@ async function starts() {
 			const isBanned = ban.includes(sender)
 			const isPrem = premium.includes(sender) || isOwner 
 			const FarhanGans = ["0@s.whatsapp.net"]
-			const FarhanGans2 = " ~ 𝐂𝐫𝐞𝐚𝐭𝐞𝐝 𝐁𝐲 𝐅𝐚𝐫𝐡𝐚𝐧𝐗𝐂𝐨𝐝𝐞𝟳"
+			const FarhanGans2 = " ~ 𝐂𝐫𝐞𝐚𝐭𝐞𝐝 𝐛𝐲 𝐉𝐚𝐜𝐤𝐒𝐢𝐭𝐨23"
 			const isUrl = (url) => {
 			    return url.match(new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&/=]*)/, 'gi'))
 		}
@@ -407,7 +407,7 @@ if (isGroup) {
 		if (FXC7.includes("://chat.whatsapp.com/")){
 		if (!isGroup) return
 		if (!isAntiLink) return
-		if (isGroupAdmins) return reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Di kick`)
+		if (isGroupAdmins) return reply(`${pushname2} es el administrador del grupo, no es posible expulsarlo`)
 		frhan.updatePresence(from, Presence.composing)
 		var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
 		setTimeout( () => {
@@ -417,16 +417,16 @@ if (isGroup) {
 		frhan.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
 					}, 1000)
 		setTimeout( () => {
-		reply(`Link Group Terdeteksi maaf *${pushname2}* anda akan di kick`)
+		reply(`Enlace de grupo detectado losiento pero *${pushname2}* se lo mamaste a dracula`)
 		}, 0)
 	}
 		if (txt.length > 500){
         if (!isGroup) return
 		if (!isAntiVirtex) return
-		if (isGroupAdmins) return reply(`${pushname2} Adalah Admin Group Kamu Tidak Akan Di kick`)
+		if (isGroupAdmins) return reply(`${pushname2} es el administrador del grupo, no es posible expulsarlo`)
 		frhan.updatePresence(from, Presence.composing)
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		costum(monospace(`Virtex Terdeteksi maaf ${sender.split("@")[0]} anda akan di kick dari group`))
+		costum(monospace(`Virtex Detectado lo siento pero ${sender.split("@")[0]} se lo mamaste a dracula`))
 		setTimeout( () => {
 			frhan.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
 			frhan.blockUser(sender, "add")
@@ -435,7 +435,7 @@ if (isGroup) {
 		if (isGroup && isBadWord) {
 		if (bad.includes(FXC7)) {
 		if (!isGroupAdmins) {
-		return reply("JAGA UCAPAN DONG!!")
+		return reply("Quieres ban ?!!")
 		.then(() => frhan.groupRemove(from, sender))
 		.then(() => {
 		frhan.sendMessage(from, `*「 ANTI BADWORD 」*\nKamu dikick karena berkata kasar!`, text ,{quoted: mek})
