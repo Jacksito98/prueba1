@@ -123,8 +123,8 @@ function kyun(seconds){
   return `${pad(hours)} Jam ${pad(minutes)} Menit ${pad(seconds)} Detik`
 }
 function tanggal(){
-myMonths = ["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
-			myDays = ['Minggu','Senin','Selasa','Rabu','Kamis','Jum at','Sabtu'];
+myMonths = ["enero","febrero","marzo","abril","mayo","junio","Julio","Agosto","Septiembre","octubre","noviembre","diciembre"];
+			myDays = ['domingo','lunes','martes','miercoles','jueves','viernes','sabado'];
 			var tgl = new Date();
 			var day = tgl.getDate()
 			bulan = tgl.getMonth()
@@ -548,29 +548,29 @@ return new Promise(resolve => setTimeout(resolve, ms));
 			switch(command) { 
 		case 'mutualan':
 			if (!isUser) return reply(mess.only.userB)
-			if (isGroup) return  reply( 'Command ini tidak bisa digunakan di dalam grup,silahkan gunakan di private chat bot')
+			if (isGroup) return  reply( 'este comando no se puede usar en un grupo utilicelo en el dm del bot')
 			const anug = fs.readFileSync('./database/json/user.json')
 			const anugJson = JSON.parse(anug)
 			const rondIndox = Math.floor(Math.random() * anugJson.length)
 			const rondKoy = anugJson[rondIndox]
-			await reply('Looking for a partner...')
+			await reply('buscando pareja...')
 			await sleep(3000)
 			await reply(`wa.me/${rondKoy.split("@")[0]}`)
 			await sleep(1000)
-			await reply( `Partner found: 🙉\n*${prefix}next* — find a new partner`)
+			await reply( `pareja encontrada: 🙉\n*${prefix}next* — find a new partner`)
 		break
 		case 'next':
 			if (!isUser) return reply(mess.only.userB)
-			if (isGroup) return  reply( 'Command ini tidak bisa digunakan di dalam grup,silahkan gunakan di private chat bot')
+			if (isGroup) return  reply( 'este comando no se puede usar en un grupo utilicelo en el dm del bot')
 			const aanug = fs.readFileSync('./database/json/user.json')
 			const aanugJson = JSON.parse(aanug)
 			const rondIndoxx = Math.floor(Math.random() * aanugJson.length)
 			const rondKoyy = aanugJson[rondIndoxx]
-			await reply('Looking for a partner...')
+			await reply('buscando pareja...')
 			await sleep(3000)
 			await reply(`wa.me/${rondKoyy.split("@")[0]}`)
 			await sleep(1000)
-			await reply( `Partner found: 🙉\n*${prefix}next* — find a new partner`)
+			await reply( `pareja encontrada: 🙉\n*${prefix}next* — find a new partner`)
 		break
 			case 'vapor':
 					if (!isOwner) return reply(mess.only.owner)
@@ -678,7 +678,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					for (let Y of res.data) {
 						teks += `\n*「 _BRAINLY_ 」*\n\n*➸ Pertanyaan:* ${Y.pertanyaan}\n\n*➸ Jawaban:* ${Y.jawaban[0].text}\n❉───────────────────────❉\n`
 					}
-					costum(teks, text, FarhanGans, `Ciee Cari Jawaban Yaa😂\nFollow IG: @_farhan_xcode7`)
+					costum(teks, text, FarhanGans, `Ciee Cari Jawaban Yaa😂\nFollow IG: @jack_paymon`)
 					console.log(res)
 					})
 					await limitAdd(sender)
@@ -696,7 +696,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					ppimg = 'https://i.ibb.co/Gp4H47k/7dba54f7e250.jpg'
 					}
 					const noSeri = createSerial(15)
-					captionnya = `╭─「 *REGISTRO DE USUARIO* 」\n│ \`\`\`El registro es exitoso con\`\`\` \n│ \`\`\`SN: ${noSeri}\`\`\`\n│\n│\`\`\`Pada ${date} ${time}\`\`\`\n│\`\`\`[Nombre]: ${pushname2}\`\`\`\n│\`\`\`[Numero]: wa.me/${sender.split("@")[0]}\`\`\`\n│\`\`\`Para usar el bot\`\`\`\n│\`\`\`por favor\`\`\`\n│\`\`\`kirim ${prefix}help/menu\`\`\`\n│\`\`\`\n│Usuarios Totales: ${user.length} personas\`\`\`\n╰─────────────────────────`
+					captionnya = `╭─「 *REGISTRO DE USUARIO* 」\n│ \`\`\`El registro es exitoso con\`\`\` \n│ \`\`\`SN: ${noSeri}\`\`\`\n│\n│\`\`\`fecha ${date} ${time}\`\`\`\n│\`\`\`[Nombre]: ${pushname2}\`\`\`\n│\`\`\`[Numero]: wa.me/${sender.split("@")[0]}\`\`\`\n│\`\`\`Para usar el bot\`\`\`\n│\`\`\`por favor\`\`\`\n│\`\`\`enviar ${prefix}menu\`\`\`\n│\`\`\`\n│Usuarios Totales: ${user.length} personas\`\`\`\n╰─────────────────────────`
 					daftarimg = await getBuffer(ppimg)
 					frhan.sendMessage(from, daftarimg, image, {quoted: mek, caption: captionnya})
 					break
@@ -781,7 +781,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 					me = frhan.user
 					user.push(sender)
 					uptime = process.uptime()
-					teks = `➽ *Nama Bot* : ${me.name}\n➽ *Owner Bot* : https://api.whatsapp.com/${ownerInfo}\n➽ *prefix* : | ${prefix} |\n➽ *Total Block* : ${blocked.length}\n➽ *Aktif Sejak* : ${kyun(uptime)}\n➽ *Total Pengguna* : ${user.length} User\n➽ *Instagram* : https://www.instagram.com/_farhan_xcode7\n\n➽ *Special Thanks To* :\n\n➽ Allah SWT \n➽ MhankBarBar\n➽ Nurutomo\n➽ Manurios`
+					teks = `➽ *Nombre del bot* : ${me.name}\n➽ *Bot propietario* : https://api.whatsapp.com/${ownerInfo}\n➽ *prefix* : | ${prefix} |\n➽ *Total Block* : ${blocked.length}\n➽ *Aktif Sejak* : ${kyun(uptime)}\n➽ *Total Pengguna* : ${user.length} User\n➽ *Instagram* : https://www.instagram.com/jack_paymon/?hl=es\n\n➽ *Gracias especiales* :\n\n➽ Allah SWT \n➽ MhankBarBar\n➽ Nurutomo\n➽ Manurios`
 					buffer = await getBuffer(me.imgUrl)
 					frhan.sendMessage(from, buffer, image, {quoted: mek, caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break 
@@ -1224,7 +1224,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 				if (isLimit(sender)) return reply(limitend(pushname2))
-				if (args.length < 1) return reply(`[❗] Kirim perintah *${prefix}kalkulator [ Angka ]*\nContoh : ${prefix}kalkulator 12*12\n*NOTE* :\n- Untuk Perkalian Menggunakan *\n- Untuk Pertambahan Menggunakan +\n- Untuk Pengurangan Mennggunakan -\n- Untuk Pembagian Menggunakan /`)
+				if (args.length < 1) return reply(`[❗] enviar comando *${prefix}kalkulator [ Angka ]*\nContoh : ${prefix}kalkulator 12*12\n*NOTE* :\n- Untuk Perkalian Menggunakan *\n- Untuk Pertambahan Menggunakan +\n- Untuk Pengurangan Mennggunakan -\n- Untuk Pembagian Menggunakan /`)
 				mtk = `${body.slice(12)}`
 				try {
 				anu = await fetchFxc7(`https://api.vhtear.com/calculator?value=${mtk}&apikey=${VthearApi}`, {method: 'get'})
@@ -1236,7 +1236,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 			break 
 				case 'owner':
 				frhan.sendMessage(from, {displayname: "jeff", vcard: vcard}, MessageType.contact, { quoted: mek})
-				reply('wa.me/628311800241')
+				reply('wa.me/18295176783')
 				break
 				
 			case 'fitnah':
@@ -1402,7 +1402,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 				if (!isGroupAdmins) return reply(mess.only.admin)
 				if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 				frhan.groupUpdateSubject(from, `${body.slice(9)}`)
-				frhan.sendMessage(from, `\`\`\`✓Sukses Mengganti Nama Group Menjadi\`\`\` *${body.slice(9)}*`, text, {quoted: mek})
+				frhan.sendMessage(from, `\`\`\`✓Cambio exitoso del nombre del grupo a\`\`\` *${body.slice(9)}*`, text, {quoted: mek})
 			break
 			case 'setdesc':
 				if (isBanned) return reply(mess.only.benned)    
@@ -1412,7 +1412,7 @@ return new Promise(resolve => setTimeout(resolve, ms));
 				if (!isGroupAdmins) return reply(mess.only.admin)
 				if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 				frhan.groupUpdateDescription(from, `${body.slice(9)}`)
-				frhan.sendMessage(from, `\`\`\`✓Sukses Mengganti Deskripsi Group\`\`\` *${groupMetadata.subject}* Menjadi: *${body.slice(9)}*`, text, {quoted: mek})
+				frhan.sendMessage(from, `\`\`\`✓Cambiar con exito las descripciones de los grupos\`\`\` *${groupMetadata.subject}* Menjadi: *${body.slice(9)}*`, text, {quoted: mek})
 			break
 			case 'tts':
 				if (isBanned) return reply(mess.only.benned)    
@@ -4644,7 +4644,7 @@ case 'nping':
 		break 
 				default:
 					if (body.startsWith(`${prefix}${command}`)) {
-					reply(`Maaf kak, Command Salah Coba Periksa Kembali`)
+					reply(`Losiento mi loco xd comando incorrecto intenta de nuevo o rueda de ahi`)
 				}
 					if (isGroup && isSimi && budy != undefined) {
 						console.log(budy)
@@ -4652,7 +4652,7 @@ case 'nping':
 						console.log(muehe)
 						reply(muehe)
 					} else {
-						console.log(color('[IRIENEBOT]','aqua'), 'Command Tidak Terdaftar', color(sender.split('@')[0]))
+						console.log(color('[JACKSITO-BOT]','aqua'), 'Command Tidak Terdaftar', color(sender.split('@')[0]))
 					}
 			}
 		} catch (e) {
