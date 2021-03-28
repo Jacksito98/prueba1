@@ -108,7 +108,7 @@ const { wait, simih, getBuffer, h2k, banner, generateMessageID, getGroupAdmins, 
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
             + 'FN:Jack\n'
-            + 'ORG:Owner FXC7;\n'
+            + 'ORG:Jacksito;\n'
             + 'TEL;type=CELL;type=VOICE;waid=8295176783:+1 829-517-6783\n'
             + 'END:VCARD'
 
