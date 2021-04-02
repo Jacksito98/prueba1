@@ -108,8 +108,8 @@ const { wait, simih, getBuffer, h2k, banner, generateMessageID, getGroupAdmins, 
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
             + 'FN:Jack\n'
-            + 'ORG:Jacksito;\n'
-            + 'TEL;type=CELL;type=VOICE;waid=8295176783:+1 829-517-6783\n'
+            + 'ORG:JackBOTS;\n'
+            + 'TEL;type=CELL;type=VOICE;waid=18295176783:+1 829-517-6783\n'
             + 'END:VCARD'
 
 function kyun(seconds){
@@ -371,7 +371,7 @@ async function starts() {
 			const isBanned = ban.includes(sender)
 			const isPrem = premium.includes(sender) || isOwner 
 			const FarhanGans = ["0@s.whatsapp.net"]
-			const FarhanGans2 = " ~ 𝐂𝐫𝐞𝐚𝐭𝐞𝐝 𝐛𝐲 𝐉𝐚𝐜𝐤𝐒𝐢𝐭𝐨23"
+			const FarhanGans2 = " ~ 𝐂𝐫𝐞𝐚𝐭𝐞𝐝 𝐛𝐲 𝐉𝐚𝐜𝐤𝐒𝐢𝐭𝐨𝐕2"
 			const isUrl = (url) => {
 			    return url.match(new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&/=]*)/, 'gi'))
 		}
